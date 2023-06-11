@@ -1,0 +1,74 @@
+object Form1: TForm1
+  Left = 379
+  Height = 300
+  Top = 405
+  Width = 300
+  Caption = 'Счётчик'
+  ClientHeight = 300
+  ClientWidth = 300
+  Constraints.MaxHeight = 300
+  Constraints.MaxWidth = 300
+  Constraints.MinHeight = 300
+  Constraints.MinWidth = 300
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object Subtract: TButton
+    Left = 16
+    Height = 64
+    Top = 220
+    Width = 268
+    Align = alBottom
+    BorderSpacing.Left = 16
+    BorderSpacing.Right = 16
+    BorderSpacing.Bottom = 16
+    Caption = 'Убавить'
+    OnClick = SubtractClick
+    TabOrder = 0
+  end
+  object Add: TButton
+    Left = 16
+    Height = 96
+    Top = 108
+    Width = 268
+    Align = alBottom
+    BorderSpacing.Left = 16
+    BorderSpacing.Right = 16
+    BorderSpacing.Bottom = 16
+    Caption = 'Добавить'
+    OnClick = AddClick
+    TabOrder = 1
+  end
+  object count: TLabel
+    Left = 0
+    Height = 108
+    Top = 0
+    Width = 300
+    Align = alClient
+    Alignment = taCenter
+    Anchors = []
+    BidiMode = bdRightToLeft
+    Caption = 'Label'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -64
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentBidiMode = False
+    ParentColor = False
+    ParentFont = False
+  end
+  object dop: TButton
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 249
+    Height = 25
+    Top = 8
+    Width = 43
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    Caption = 'Доп...'
+    OnClick = dopClick
+    TabOrder = 2
+  end
+end

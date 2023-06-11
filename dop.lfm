@@ -1,0 +1,39 @@
+object Form2: TForm2
+  Left = 1418
+  Height = 104
+  Top = 78
+  Width = 320
+  Caption = 'Дополнительное'
+  ClientHeight = 104
+  ClientWidth = 320
+  Constraints.MaxHeight = 104
+  Constraints.MaxWidth = 320
+  Constraints.MinHeight = 104
+  Constraints.MinWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 100
+    Caption = 'Число у счётчика:'
+    ParentColor = False
+  end
+  object contra: TEdit
+    Left = 8
+    Height = 23
+    Top = 24
+    Width = 304
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 221
+    Height = 25
+    Top = 72
+    Width = 91
+    Caption = 'Применить'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+end
